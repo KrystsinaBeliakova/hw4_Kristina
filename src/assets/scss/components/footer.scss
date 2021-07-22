@@ -1,0 +1,195 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.footer {
+    background-color: $c-text;
+    min-height: 39.2rem;
+    padding-top: 6.1rem;
+    padding-bottom: 8.9rem;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__logo-link {
+        margin-bottom: 1.9rem;
+    }
+
+    &__logo {}
+
+    &__social-links {
+        margin: 0 -0.4rem 4.6rem;
+    }
+
+    &__link-icon {
+        margin: 0 0.4rem;
+    }
+
+    &__link-img {
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.3rem;
+    }
+
+    &__mark {
+        font-size: 2.4rem;
+        line-height: 1.33;
+        /* identical to box height, or 133% */
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+        margin-right: 0.5rem;
+    }
+
+    &__rating-txt {
+        font-size: 1.3rem;
+        line-height: 1.23;
+        /* or 123% */
+        color: #FFFFFF;
+        max-width: 15.9rem;
+    }
+
+    &__links-list {
+        margin: -4px 0px;
+    }
+
+    &__links-item {
+        margin: 4px 0px;
+    }
+
+    &__links-link {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        /* identical to box height, or 150% */
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+
+    &__workinghours {
+        margin-top: -0.8rem;
+    }
+
+    &__address {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        /* or 125% */
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin: 0.8rem 0;
+        position: relative;
+        left: 2.8rem;
+        max-width: 16.1rem;
+    
+        &::before{
+            position: absolute;
+            content: "";
+            background: url(../imgs/icon-location_green.svg) center no-repeat;
+            background-size: cover;
+            width: 1.4rem;
+            height: 1.9rem;
+            left: -2.8rem;
+        }
+    }
+
+    &__datetime {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        /* or 125% */
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin: 0.8rem 0;
+        position: relative;
+        left: 2.8rem;
+
+        &::before{
+            position: absolute;
+            content: "";
+            background: url(../imgs/icon-time.svg) center no-repeat;
+            background-size: cover;
+            width: 1.8rem;
+            height: 1.8rem;
+            left: -2.8rem;
+        }
+    }
+
+    &__mail {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        /* identical to box height, or 150% */
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        margin: 0.8rem 0;
+        position: relative;
+        left: 2.8rem;
+
+        &::before{
+            position: absolute;
+            content: "";
+            background: url(../imgs/icon-mail.svg) center no-repeat;
+            background-size: cover;
+            width: 2rem;
+            height: 1.6rem;
+            left: -2.8rem;
+            top: -0.1rem;
+        }
+    }
+
+    &__rules {
+        display: flex;
+        flex-direction: column;
+        margin: -0.8rem 0;
+    }
+
+    &__rule-link {
+        font-size: 1.3rem;
+        line-height: 1.23;
+        /* identical to box height, or 123% */
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        margin: 0.8rem 0;
+    }
+
+    &__license {
+        max-width: 25.4rem;
+        margin: -1.5rem 0 0.8rem;
+    }
+
+    &__txt {
+        font-size: 1.3rem;
+        line-height: 1.23;
+        /* or 123% */
+        color: #FFFFFF;
+        margin: 2rem 0;
+    }
+
+    &__payment {}
+
+    &__payment-txt {
+        font-size: 1.3rem;
+        line-height: 1.23;
+        /* identical to box height, or 123% */
+        color: #FFFFFF;
+        margin-bottom: 0.8rem;
+    }
+
+    &__payment-pictures {
+        max-width: 18.2rem;
+        margin: -0.8rem -0.8rem;
+    }
+
+    &__payment-picture {
+        margin: 0.8rem 0.8rem;
+    }
+}

@@ -1,0 +1,42 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.main-section {
+    background: url(../imgs/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 18.6rem 0 8.7rem;
+    min-height: 75.2rem;
+
+    &__title {
+        font-family: $headers-font;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 7.2rem;
+        line-height: 1.11;
+        /* or 111% */
+        letter-spacing: -0.04em;
+        color: $c-text;
+        max-width: 57rem;
+        margin-bottom: 4.1rem;
+    }
+
+    &__link {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.33;
+        /* identical to box height, or 133% */
+        color: #FFFFFF;
+        padding: 2rem 3.2rem;
+        display: inline-block;
+        background: $c-primary;
+
+        &:hover {
+            background: #1A7260;
+            color: #FFFFFF;
+        }
+    }
+}

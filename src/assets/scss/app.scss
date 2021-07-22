@@ -1,0 +1,64 @@
+// Помощники
+@import 'utils/parameters';// переменные
+@import 'utils/mixins';//миксины scss
+
+//Общее
+@import 'main/stylesheet';// шрифты
+@import 'main/reset'; // сброс стилей для кроссбраузерности
+@import 'main/common'; // общие стили
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.item {
+    background-size: cover;
+    background-position: center;
+    width: 35rem;
+    height: 27.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2.1rem;
+}
+
+.item--one {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7) 18.75%, rgba(0, 0, 0, 0) 88.24%), url(../imgs/first-news.png);
+
+    &:hover {
+    background: url(../imgs/first-news.png) center no-repeat;
+    background-size: cover;
+    }
+}
+
+.item--two {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 18.75%, rgba(0, 0, 0, 0) 88.24%), url(../imgs/second-news.png);
+    background-position: center right;
+
+    &:hover {
+        background: url(../imgs/second-news.png) no-repeat;
+        background-position: center right;
+        background-size: cover;
+        }
+}
+
+.item--three {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 18.75%, rgba(0, 0, 0, 0) 88.24%), url(../imgs/third-news.png);
+
+    &:hover {
+        background: url(../imgs/third-news.png) center no-repeat;
+        background-size: cover;
+        }
+}
+
+// дальше можно писать все стили сайта в этот файл, или писать их в компонентах
+@import 'components/header';
+@import 'components/main-section';
+@import 'components/citation';
+@import 'components/features';
+@import 'components/news';
+@import 'components/instagram';
+@import 'components/footer';

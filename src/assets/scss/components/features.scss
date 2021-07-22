@@ -1,0 +1,58 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.features {
+    position: relative;
+    z-index: 2;
+    
+    &__row {
+        display: flex;
+    }
+
+    &__content {
+        flex: 1 0 51.4%;
+        max-width: 51.4%;
+        padding-top: 7.1rem;
+    }
+
+    &__title {
+        font-family: Podkova;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 3.6rem;
+        line-height: 1.33;
+        /* identical to box height, or 133% */
+        letter-spacing: -0.04em;
+        color: $c-text;
+        margin-bottom: 2.7rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 1.6rem;
+        max-width: 44.5rem;
+    }
+
+    &__item-img {
+        margin-right: 0.65rem;
+    }
+
+    &__item-txt {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        /* identical to box height, or 125% */
+        letter-spacing: -0.02em;
+        color: $c-text;
+    }
+
+    &__img {
+        flex: 1 0 48.6%;
+        max-width: 48.6%;
+    }
+
+    &__img-photo {
+        position: relative;
+        top: 0.8rem;
+    }
+}

@@ -1,0 +1,81 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.news {
+    background-color: $c-secondary;
+    padding-top: 10.9rem;
+    padding-bottom: 12.8rem;
+    position: relative;
+    top: -3.2rem;
+    z-index: 1;
+
+    &__titles {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__title {
+        font-family: Podkova;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 3.6rem;
+        line-height: 1.33;
+        /* identical to box height, or 133% */
+        letter-spacing: -0.04em;
+        color: $c-text;
+        margin-bottom: 3.5rem;
+    }
+
+    &__link {
+        font-size: 1.8rem;
+        line-height: 21px;
+        /* identical to box height */
+        text-decoration-line: underline;
+        color: #1571DF;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item-content {}
+
+    &__item-txt {
+        font-family: Podkova;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.17;
+        /* or 117% */
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        max-width: 28.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    &__item-dates {}
+
+    &__item-date {
+        font-size: 1.3rem;
+        line-height: 1.23;
+        /* identical to box height, or 123% */
+        color: #FFFFFF;
+        opacity: 0.5;
+        position: relative;
+        left: 2rem;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background: url(../imgs/icon-date.svg) center no-repeat;
+            background-size: cover;
+            height: 1.2rem;
+            width: 1.3rem;
+            left: -1.8rem;
+            bottom: 0.2rem;
+        }
+    }
+}
