@@ -54,6 +54,23 @@
         }
 }
 
+.breadcrumbs-list-link {
+    font-size: 1.3rem;
+    line-height: 1.23;
+    /* identical to box height, or 123% */
+    color: $c-text;
+    border-bottom: 1px solid #C8D0CE;
+}
+
+.breadcrumbs-list-link--hidden {
+    font-size: 1.3rem;
+    line-height: 1.23;
+    /* identical to box height, or 123% */
+    color: $c-text;
+    border-style: hidden;
+    pointer-events: none;
+}
+
 // дальше можно писать все стили сайта в этот файл, или писать их в компонентах
 @import 'components/header';
 @import 'components/main-section';
