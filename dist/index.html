@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/app.css"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
   </head>
   <body class="wrapper"> 
     <header class="header"> 
@@ -24,7 +30,7 @@
         <div class="container header__bottom-block-inner"> <a class="header__logo" href="#"><img class="header__logo-img" src="./assets/imgs/logo.svg" alt="logo"></a>
           <nav class="header__nav"> 
             <ul class="header__nav-list">
-              <li class="header__nav-list-item"> <a href="#"> <span>О клубе</span><img class="header__dropdown" src="./assets/imgs/polygon.svg" alt="dropdown"></a></li>
+              <li class="header__nav-list-item"> <a href="#"><span>О клубе</span><img class="header__dropdown" src="./assets/imgs/polygon.svg" alt="dropdown"></a></li>
               <li class="header__nav-list-item"><a href="#">Групповые тренировки</a></li>
               <li class="header__nav-list-item"> <a href="#"> <span>Тренажерный зал</span><img class="header__dropdown" src="./assets/imgs/polygon.svg" alt="dropdown"></a></li>
               <li class="header__nav-list-item"> <a href="#">Цены </a></li>
@@ -54,10 +60,12 @@
         </div>
       </section>
       <section class="citation">
-        <div class="container citation__row"> <img class="citation__img" src="./assets/imgs/owner.jpg" alt="owner">
-          <div class="citation__context"> 
-            <h2 class="citation__txt">«Мы — команда профессионалов, которая работает над тем, чтобы сделать фитнес образом жизни каждого!»</h2>
-            <p class="citation__caption">Основатель фитнес клуба FIT LIFE, Дмитров П.А.</p>
+        <div class="container">
+          <div class="citation__row"> <img class="citation__img" src="./assets/imgs/owner.jpg" alt="owner">
+            <div class="citation__context"> 
+              <h2 class="citation__txt">«Мы — команда профессионалов, которая работает над тем, чтобы сделать фитнес образом жизни каждого!»</h2>
+              <p class="citation__caption">Основатель фитнес клуба FIT LIFE, Дмитров П.А.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -114,7 +122,7 @@
         <div class="container instagram__title"> 
           <h2 class="instagram__title-instagram">Мы в Instagram</h2>
         </div>
-        <div class="instagram__imgs"><img src="./assets/imgs/instagram-photos.jpg" alt="instagram-photos"></div>
+        <div class="instagram__imgs"><img class="instagram__img" src="./assets/imgs/instagram-photos.jpg" alt="instagram-photos"></div>
       </section>
     </div>
     <footer class="footer">
@@ -144,8 +152,13 @@
         </div>
         <div class="footer__col">
           <div class="footer__license">
-            <p class="footer__txt"><span>ООО «Фитнес-клуб» </span><br><span>г. Минск, пр. Дзержинского 7А, помещение 6, инд. 220013</span></p>
-            <p class="footer__txt">Свидетельство о гос. регистрации №199994444 выдано 25.05.2019 Минским горисполкомом.</p>
+            <div class="footer__txt">
+              <p>ООО «Фитнес-клуб» </p>
+              <p>г. Минск, пр. Дзержинского 7А, помещение 6, инд. 220013</p>
+            </div>
+            <div class="footer__txt"> 
+              <p>Свидетельство о гос. регистрации №199994444 выдано 25.05.2019 Минским горисполкомом.</p>
+            </div>
           </div>
           <div class="footer__payment">
             <p class="footer__payment-txt">Способы оплаты:</p>

@@ -27,30 +27,29 @@
 
 .item--one {
     background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7) 18.75%, rgba(0, 0, 0, 0) 88.24%), url(../imgs/first-news.png);
+    transition: transform 0.3s ease;
 
     &:hover {
-    background: url(../imgs/first-news.png) center no-repeat;
-    background-size: cover;
+    transform: scale(1.1);
     }
 }
 
 .item--two {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 18.75%, rgba(0, 0, 0, 0) 88.24%), url(../imgs/second-news.png);
     background-position: center right;
+    transition: transform 0.3s ease;
 
     &:hover {
-        background: url(../imgs/second-news.png) no-repeat;
-        background-position: center right;
-        background-size: cover;
+        transform: scale(1.1);
         }
 }
 
 .item--three {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 18.75%, rgba(0, 0, 0, 0) 88.24%), url(../imgs/third-news.png);
+    transition: transform 0.3s ease;
 
     &:hover {
-        background: url(../imgs/third-news.png) center no-repeat;
-        background-size: cover;
+        transform: scale(1.1);
         }
 }
 

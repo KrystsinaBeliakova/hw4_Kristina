@@ -19,5 +19,11 @@
         color: $c-text;
     }
 
-    &__imgs {}
+    &__imgs {
+        margin: 0 auto;
+    }
+
+    &__img {
+        width: 100%;
+    }
 }
