@@ -2,9 +2,13 @@
 @import "../utils/mixins";
 
 .citation {
-    position: relative;
-    top: -7.2rem;
+    position: absolute;
+    top: 49.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    // top: -7.2rem;
     z-index: 2;
+    width: 100%;
 
     &__row {
         display: flex;
@@ -13,14 +17,19 @@
         padding: 4.6rem 9.6rem 5.8rem;
         background: #FFFFFF;
         box-shadow: 0px 21.7297px 48.8919px rgba(0, 0, 0, 0.15);
+        margin: 0 1.5rem;
     }
 
     &__img {
-        max-width: 100%;
+        flex: 1 0 19%;
+        max-width: 19%;
+        border-radius: 50%;
+        max-height: 17.6rem;
     }
 
     &__context {
-        max-width: 70.2rem;
+        flex: 1 0 76.47%;
+        max-width: 76.47%;
     }
 
     &__txt {
@@ -43,4 +52,36 @@
         color: $c-text2;
     }
 
+}
+
+@media screen and (max-width: $md) {
+    .citation {
+        &__row {
+            padding: 4.6rem 3.6rem 5.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .citation {
+        &__row {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__img {
+            margin-bottom: 3rem;
+        }
+
+        &__context {
+            flex: 1 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .citation {
+        top: 65.8rem;
+    }
 }

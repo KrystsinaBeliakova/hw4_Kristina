@@ -1,30 +1,23 @@
+include ../mixins/_features
+
 section.features 
     .container.features__row 
         .features__content 
             h2.features__title Преимущества зала
-            mixin features(arg={})
-                .features__item
-                    img.features__item-img(src=arg.img, alt="")
-                    p.features__item-txt=arg.txt
             +features ({
-                img: "./assets/imgs/yes.svg",
                 txt: "Фитнес-клуб площадью 1400 кв.м."
             })
             +features ({
-                img: "./assets/imgs/yes.svg",
                 txt: "Тренажёрный зал 500 кв.м., оснащенный современными тренажерами."
             })
             +features ({
-                img: "./assets/imgs/yes.svg",
                 txt: "Более 15 различных фитнес-программ (групповых занятий), как классических, так и уникальных."
             })
             +features ({
-                img: "./assets/imgs/yes.svg",
                 txt: "Зона бокса в свободном доступе. Персональные и групповые тренировки по единоборствам."
             })
             +features ({
-                img: "./assets/imgs/yes.svg",
                 txt: "Питьевая вода, Wi-Fi, TV, комфортные раздевалки и душевые для максимального удобства, шкафчики в постоянную аренду."
             })
         .features__img 
-            img.features__img-photo(src="./assets/imgs/features.jpg", alt="gym")
+            //- img.features__img-photo(src="./assets/imgs/features.jpg", alt="gym")

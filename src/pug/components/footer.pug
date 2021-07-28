@@ -1,6 +1,6 @@
 footer.footer
     .container.footer__row
-        .footer__col 
+        .footer__item1 
             a.footer__logo-link(href="#") 
                 img.footer__logo(src="./assets/imgs/logo-green.svg", alt="logo")
             .footer__social-links 
@@ -9,12 +9,8 @@ footer.footer
                 a.footer__link-icon(href="#")
                     img.footer__link-img(src="./assets/imgs/icon-youtube.svg", alt="icon-youtube") 
                 a.footer__link-icon(href="#")
-                    img.footer__link-img(src="./assets/imgs/icon-facebook.svg", alt="icon-facebook") 
-            .footer__rating
-                p.footer__mark 5.0
-                img(src="./assets/imgs/stars.svg", alt="stars")
-            p.footer__rating-txt Рейтинг фитнес-клуба на основе отзывов Google
-        .footer__col 
+                    img.footer__link-img(src="./assets/imgs/icon-facebook.svg", alt="icon-facebook")
+        .footer__item2
             ul.footer__links-list 
                 li.footer__links-item 
                     a.footer__links-link(href="#") О клубе
@@ -26,25 +22,84 @@ footer.footer
                     a.footer__links-link(href="#") Цены
                 li.footer__links-item 
                     a.footer__links-link(href="#") Раписание
-        .footer__col 
+        .footer__item3
             .footer__workinghours
                 p.footer__address г. Минск, пр-т. Дзержинского, 19
                 p.footer__datetime Пн-Вс 7:00-23:00 
                 a.footer__mail(href="mailto:fitness.club@gmail.com") fitness.club@gmail.com
-            .footer__rules
-                a.footer__rule-link(href="#") Политика конфиденциальности
-                a.footer__rule-link(href="#") Публичный договор
-                a.footer__rule-link(href="#") Правила посещения фитнес-клуба                
-        .footer__col
+        .footer__item4
             .footer__license
                 .footer__txt
                     p ООО «Фитнес-клуб» 
                     p г. Минск, пр. Дзержинского 7А, помещение 6, инд. 220013
                 .footer__txt 
                     p Свидетельство о гос. регистрации №199994444 выдано 25.05.2019 Минским горисполкомом.
-            .footer__payment
+        .footer__item5 
+            .footer__rating
+                p.footer__mark 5.0
+                img(src="./assets/imgs/stars.svg", alt="stars")
+            p.footer__rating-txt Рейтинг фитнес-клуба на основе отзывов Google
+        .footer__item6
+            .footer__rules
+                a.footer__rule-link(href="#") Политика конфиденциальности
+                a.footer__rule-link(href="#") Публичный договор
+                a.footer__rule-link(href="#") Правила посещения фитнес-клуба                
+        .footer__item7
                 p.footer__payment-txt Способы оплаты:
                 .footer__payment-pictures 
+                    img.footer__payment-picture(src="./assets/imgs/visa.svg", alt="visa")
+                    img.footer__payment-picture(src="./assets/imgs/visa-electron.svg", alt="visa-electron")
+                    img.footer__payment-picture(src="./assets/imgs/mastercard.svg", alt="mastercard")
+                    img.footer__payment-picture(src="./assets/imgs/maestro.svg", alt="maestro")   
+                    img.footer__payment-picture(src="./assets/imgs/belkart.svg", alt="belkart")
+                    img.footer__payment-picture(src="./assets/imgs/paypal.svg", alt="paypal")                                     
+
+
+        //- .footer__col 
+        //-     a.footer__logo-link(href="#") 
+        //-         img.footer__logo(src="./assets/imgs/logo-green.svg", alt="logo")
+        //-     .footer__social-links 
+        //-         a.footer__link-icon(href="#")
+        //-             img.footer__link-img(src="./assets/imgs/icon-instagram.svg", alt="icon-instagram")
+        //-         a.footer__link-icon(href="#")
+        //-             img.footer__link-img(src="./assets/imgs/icon-youtube.svg", alt="icon-youtube") 
+        //-         a.footer__link-icon(href="#")
+        //-             img.footer__link-img(src="./assets/imgs/icon-facebook.svg", alt="icon-facebook") 
+        //-     .footer__rating
+        //-         p.footer__mark 5.0
+        //-         img(src="./assets/imgs/stars.svg", alt="stars")
+        //-     p.footer__rating-txt Рейтинг фитнес-клуба на основе отзывов Google
+        //- .footer__col 
+        //-     ul.footer__links-list 
+        //-         li.footer__links-item 
+        //-             a.footer__links-link(href="#") О клубе
+        //-         li.footer__links-item 
+        //-             a.footer__links-link(href="#") Групповые тренировки
+        //-         li.footer__links-item 
+        //-             a.footer__links-link(href="#") Тренажерный зал
+        //-         li.footer__links-item 
+        //-             a.footer__links-link(href="#") Цены
+        //-         li.footer__links-item 
+        //-             a.footer__links-link(href="#") Раписание
+        //- .footer__col 
+        //-     .footer__workinghours
+        //-         p.footer__address г. Минск, пр-т. Дзержинского, 19
+        //-         p.footer__datetime Пн-Вс 7:00-23:00 
+        //-         a.footer__mail(href="mailto:fitness.club@gmail.com") fitness.club@gmail.com
+        //-     .footer__rules
+        //-         a.footer__rule-link(href="#") Политика конфиденциальности
+        //-         a.footer__rule-link(href="#") Публичный договор
+        //-         a.footer__rule-link(href="#") Правила посещения фитнес-клуба                
+        //- .footer__col
+        //-     .footer__license
+        //-         .footer__txt
+        //-             p ООО «Фитнес-клуб» 
+        //-             p г. Минск, пр. Дзержинского 7А, помещение 6, инд. 220013
+        //-         .footer__txt 
+        //-             p Свидетельство о гос. регистрации №199994444 выдано 25.05.2019 Минским горисполкомом.
+        //-     .footer__payment
+        //-         p.footer__payment-txt Способы оплаты:
+        //-         .footer__payment-pictures 
                     img.footer__payment-picture(src="./assets/imgs/visa.svg", alt="visa")
                     img.footer__payment-picture(src="./assets/imgs/visa-electron.svg", alt="visa-electron")
                     img.footer__payment-picture(src="./assets/imgs/mastercard.svg", alt="mastercard")

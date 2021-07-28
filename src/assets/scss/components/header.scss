@@ -27,8 +27,13 @@
         align-items: flex-end;
     }
 
-    &__location-img {
-        padding: 0.15rem 0.3rem;
+    &__location-img {}
+
+    &__location-icon .icon {
+        fill: $c-text2;
+        height: 1.3rem;
+        width: 1rem;
+        margin: 0 0.3rem;
     }
 
     &__txt {
@@ -126,7 +131,7 @@
         display: inline-block;
         position: relative;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 1.5;
         /* identical to box height, or 150% */
         letter-spacing: -0.04em;
@@ -179,4 +184,66 @@
         display: none;
     }
 
+}
+
+@media screen and (max-width: $lg) {
+    .header {
+        &__nav-list {
+            flex-wrap: wrap;
+        }
+
+        &__nav-list-item {
+            margin: 1rem;
+        }
+
+        &__account {
+            margin-left: 3rem;
+        }
+
+        &__account-link {
+            padding: 1.4rem 0.1rem 1.4rem 5.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: $md) {
+    .header {
+        &__bottom-block-inner {
+            align-items: flex-start;
+        }
+
+        &__nav-list-item {
+            margin: 0 0 1.8rem;
+        }
+
+        &__account-link {
+            padding: 1rem 4.2rem 1rem 5.2rem;
+
+            &:before {
+                top: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .header {
+        &__bottom-block-inner {
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__logo {
+            margin-bottom: 4rem;
+        }
+
+        &__nav {
+            margin-bottom: 2rem;
+        }
+
+        &__nav-list {
+            justify-content: center;
+        }
+    }
 }

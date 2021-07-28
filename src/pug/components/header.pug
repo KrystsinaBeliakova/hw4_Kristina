@@ -1,14 +1,18 @@
+include ../mixins/_icon
+
 header.header 
     .header__top-block
         .container.header__top-block-inner
             .header__location
-                img.header__location-img(src="./assets/imgs/icon-location.svg", alt="icon-location") 
+                .header__location-icon
+                    +icon("i-location")
+                //- img.header__location-img(src="./assets/imgs/icon-location.svg", alt="icon-location") 
                 p.header__txt г. Минск, пр-т. Дзержинского, 19
             .header__time-phone
                 p.header__txt Пн-Вс 7:00-23:00 
                 .header__phone
                     img.header__phone-img(src="./assets/imgs/icon-phone.svg", alt="icon-phone")
-                    a.header__phone-link(href="tel:+375 (44) 1-222-999") +375 (44) 1-222-999
+                    a.header__phone-link(href="tel:+375441222999") +375 (44) 122-29-99
     .header__bottom-block 
         .container.header__bottom-block-inner 
             a.header__logo(href="#")
