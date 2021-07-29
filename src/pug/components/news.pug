@@ -1,3 +1,5 @@
+include ../mixins/_icon
+
 section.news 
     .container 
         .news__content
@@ -10,21 +12,27 @@ section.news
                     .news__item-content
                         h3.news__item-txt Какие ошибки в спортзале ведут к травмам?
                     .news__item-dates
-                        p.news__item-date 14.12.2020
+                        .news__i-date
+                            +icon("i-date")
+                            p.news__item-date 14.12.2020
             .news__imgs2
             .news__link2
                 a.news__item(href="#")
                     .news__item-content
                         h3.news__item-txt Эффективны ли скручивания на пресс?
                     .news__item-dates
-                        p.news__item-date 14.12.2020
+                        .news__i-date
+                            +icon("i-date")
+                            p.news__item-date 14.12.2020
             .news__imgs3
             .news__link3
                 a.news__item(href="#") 
                     .news__item-content
                         h3.news__item-txt Удар по здоровью: как возвращаться к тренировкам после коронавируса?
                     .news__item-dates
-                        p.news__item-date 14.12.2020
+                        .news__i-date
+                            +icon("i-date")
+                            p.news__item-date 14.12.2020
 
 
 
