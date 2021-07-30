@@ -71,6 +71,8 @@
 
         &__img {
             margin-bottom: 3rem;
+            flex: 1 0 100%;
+            max-width: 100%;
         }
 
         &__context {
@@ -83,5 +85,11 @@
 @media screen and (max-width: $xs) {
     .citation {
         top: 65.8rem;
+
+        &__img {
+            margin-bottom: 3rem;
+            flex: 1 0 30%;
+            max-width: 30%;
+        }
     }
 }

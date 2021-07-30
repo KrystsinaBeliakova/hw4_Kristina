@@ -192,3 +192,17 @@
     //     }
     }
 }
+
+@media screen and (max-width: $xxs) {
+    .instagram {
+        &__title-instagram {
+            font-family: Podkova;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.4rem;
+            line-height: 1.17;
+            /* identical to box height, or 117% */
+            letter-spacing: -0.02em;
+        }
+    }
+}
